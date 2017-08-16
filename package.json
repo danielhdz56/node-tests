@@ -1,0 +1,22 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "description": "Test applications using Mocha",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha **/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielhdz56/node-tests.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielhdz56/node-tests/issues"
+  },
+  "homepage": "https://github.com/danielhdz56/node-tests#readme",
+  "devDependencies": {
+    "mocha": "^3.0.0"
+  }
+}
