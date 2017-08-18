@@ -7,10 +7,24 @@ it('should add two numbers', () => {
     expect(res).toBe(44).toBeA('number');
 });
 
+it('should async add two numbers', (done) => { // use done as an argument to let mocha know to wait until done is called to test the async code
+    utils.asyncAdd(4, 3, (sum) => {
+        expect(sum).toBe(7).toBeA('number');
+        done();
+    });
+});
+
 it('should square a number', () => {
     var res = utils.square(5);
     expect(res).toBe(25).toBeA('number');
 });
+
+it('should async square a number', (done) => {
+    utils.asyncSquare(5, (square) => {
+        expect(square).toBe(25).toBeA('number');
+        done();
+    });
+})
 
 it('should expect some value not equal another value', () => {
     expect(12).toNotBe(11); //checks equality for strings and numbers
